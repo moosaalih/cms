@@ -53,11 +53,11 @@ Route::get('/read', function(){
 });
 
 
-//Route::get('/update', function(){
-//
-//    $update = DB::update('update posts set content="updated" where id=?', [1]);
-//
-//    return $update;
-//
-//
-//});
+Route::get('/update', function(){
+
+    $update = DB::update('update posts set content="updated" where id=?', [1]);
+
+    return $update;
+
+
+});
